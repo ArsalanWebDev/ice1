@@ -1,0 +1,380 @@
+@font-face {
+  font-family: "iran_sans_bold";
+  src: url("../fonts/iran_sans_bold.woff") format("woff");
+}
+@font-face {
+  font-family: "iran_sans_light";
+  src: url("../fonts/iran_sans_bold.woff") format("woff");
+}
+@font-face {
+  font-family: "iran_sans_medi";
+  src: url("../fonts/iran_sans_medi.woff") format("woff");
+}
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: iran_sans_light;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+header .logo {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+header .logo i {
+  color: var(--green);
+}
+header .navbar a {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--light-color);
+}
+header .navbar a.active,
+header .navbar a:hover {
+  color: #fff;
+  background-color: var(--green);
+}
+header .icons i,
+header.icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background-color: #eee;
+}
+header .icons #bars {
+  display: none;
+}
+
+section {
+  padding: 8rem 9%;
+}
+section:nth-child(even) {
+  background: #eee;
+}
+.home .home-slider .slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 9rem;
+}
+.home .home-slider .slide .content {
+  flex: 1 1 45rem;
+}
+.home .home-slider .slide .image {
+  flex: 1 1 50rem;
+}
+.home .home-slider .slide .image img {
+  width: 40%;
+  rotate: -12deg;
+  margin-left: 25rem;
+}
+.home .home-slider .slide .content span {
+  color: var(--green);
+  font-size: 2.5rem;
+}
+.home .home-slider .slide .content h3 {
+  color: var(--black);
+  font-size: 7rem;
+}
+.home .wrapper .home-slider .slide .content p {
+  color: var(--light-color);
+  font-size: 2.2rem;
+  padding: 10.5rem 0;
+  line-height: 9.5;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 2.7rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 0.3rem;
+}
+
+.section2 {
+  display: inline-flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-left: 10rem;
+  margin-right: 2rem;
+  color: rgb(91, 38, 0);
+  background: rgb(255, 255, 255);
+}
+/* Menu  */
+.item2 {
+  margin-right: 3rem;
+}
+.invoer {
+  display: flex;
+}
+h2 {
+  display: block;
+  margin-left: 5rem;
+  color: green;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.menuItemUl {
+  display: grid;
+  grid-template-columns: 1rem 1rem;
+  grid-template-rows: 40px 40px 40px 40px 40px;
+  border-radius: 20px;
+}
+
+.menuItemv {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.menuItemPricev {
+  color: rgb(84, 43, 12);
+
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-left: 100px;
+}
+.menuItemc {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.menuItemPricec {
+  color: rgb(84, 43, 12);
+
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-left: 100px;
+}
+.menuItems {
+  grid-row: 3/4;
+}
+.menuItemPrices {
+  color: rgb(84, 43, 12);
+
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-left: 100px;
+}
+.menuItema {
+  grid-row: 4/5;
+}
+.menuItemPricea {
+  color: rgb(84, 43, 12);
+
+  grid-column: 2/3;
+  grid-row: 4/5;
+  margin-left: 100px;
+}
+.menuItemb {
+  grid-row: 5/6;
+}
+.menuItemPriceb {
+  color: rgb(84, 43, 12);
+
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin-left: 100px;
+}
+.menuItemm {
+  grid-row: 6/7;
+}
+.menuItemPricem {
+  color: rgb(84, 43, 12);
+
+  grid-column: 2/3;
+  grid-row: 6/7;
+  margin-left: 100px;
+}
+
+.menuItem {
+  font-family: "Oleo Script Swash Caps", cursive;
+  grid-column: 1/2;
+}
+li {
+  list-style-type: none;
+  color: green;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 1.5rem;
+}
+
+.containerTitel {
+  margin-left: 10rem;
+}
+.container {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.makeTitel {
+  margin-left: 3rem;
+}
+.make {
+  width: 250px;
+}
+
+.icecount {
+  display: inline;
+  align-items: center;
+
+  padding: 5px;
+  width: 5rem;
+}
+
+/*start responsive*/
+@media (max-widt: 711px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-widt: 768px) {
+  html .icons #bars {
+    display: inline-block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 0);
+  }
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: #eee;
+  }
+}
+#vanilleinput {
+  width: 5rem;
+  height: 2rem;
+  margin-left: 6rem;
+}
+#vanilleinput:hover {
+  width: 8rem;
+  border: #666 solid 2px;
+  height: 3rem;
+}
+.goldHover {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 1.5rem;
+}
+#chocoladeinput {
+  width: 5rem;
+  height: 2rem;
+  margin-left: 3.8rem;
+}
+#chocoladeinput:hover {
+  width: 8rem;
+  border: #666 solid 2px;
+  height: 3rem;
+}
+#strainput {
+  width: 5rem;
+  height: 2rem;
+  margin-left: 2.55rem;
+}
+#strainput:hover {
+  width: 8rem;
+  border: #666 solid 2px;
+  height: 3rem;
+}
+#avocainput {
+  width: 5rem;
+  height: 2rem;
+  margin-left: 5rem;
+}
+#avocainput:hover {
+  width: 8rem;
+  border: #666 solid 2px;
+  height: 3rem;
+}
+#blueinput {
+  width: 5rem;
+  height: 2rem;
+  margin-left: 4rem;
+}
+#blueinput:hover {
+  width: 8rem;
+  border: #666 solid 2px;
+  height: 3rem;
+}
+.submitbtn {
+  margin-top: 0.2rem;
+  display: inline-block;
+  font-size: 2rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 6rem;
+}
+input {
+  border-radius: 5px;
+  border: #666 solid 2px;
+}
+
+/* .recip {
+  border: #27ae60 10px solid;
+  margin-left: 15px;
+} */
+/* .iceWrapper {
+  border: #27ae60 3px solid;
+  width: 100%;
+} */
+#bigPot {
+  width: 15vw;
+  height: auto;
+  border: red 2px solid;
+  margin-top: 4rem;
+  display: none;
+}

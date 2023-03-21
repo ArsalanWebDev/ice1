@@ -1,0 +1,139 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="font-awesome/CSS/font-awsome.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.js">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><i class="fa fa-untensils"></i>Ice...</a>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#order">Order</a>
+        <a href="#abaut">Abaut</a>
+        <a href="#dishes">Dishes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="icons">
+        <i class="fa fa-bars" id="bars"></i>
+        <div class="search">
+          <form action="#">
+            <input type="text" placeholder=" Search..." name="search" />
+          </form>
+        </div>
+        <a href="#" class="fa fa-heart"></a>
+        <a href="#" class="fa fa-shopping-cart"></a>
+      </div>
+    </header>
+    <!-- end of header -->
+    <section class="home" id="home">
+      <div class="home-slider">
+        <div class="wrapper">
+          <div class="slide">
+            <div class="contact">
+              <span>Our Special Ice Cream</span>
+              <h3>French Ice Cream</h3>
+              <p>
+                Great ice cream in a wonderful enviroment. Play it safe with
+                your favourite flavours or discover the unusual flavours offered
+                by Brussels' ice cream parlours.
+              </p>
+              <a href="#invoer" class="btn">Order now</a>
+            </div>
+            <div class="image">
+              <img src="icecream2-slider-pic7.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section2">
+      <div class="item2">
+        <h2 class="menuTitel">Menu</h2>
+        <ul class="menuItemUl">
+          <li class="menuItemv">Vanille</li>
+          <li class="menuItemPricev">€2.00</li>
+
+          <li class="menuItemc">Chocolate</li>
+          <li class="menuItemPricec">€2.00</li>
+
+          <li class="menuItems">Strabwberry</li>
+          <li class="menuItemPrices">€2.00</li>
+
+          <li class="menuItema">Avocado</li>
+          <li class="menuItemPricea">€3.00</li>
+
+          <li class="menuItemb">Blueberry</li>
+          <li class="menuItemPriceb">€2.00</li>
+
+          <!-- <li class="menuItemm">Mango</li>
+            <li class="menuItemPricem">€1.00</li> -->
+        </ul>
+      </div>
+
+
+
+      <div id="invoer">
+
+        <form>
+              <h2 class="containerTitel">Pot/Cone</h2>
+              <div class="container">
+                  <input onclick="check()" type="radio" id="pot" value="pot" name="container" required>
+                  <label  for="pot" class="goldHover">Pot <br><img src="pot.jpg" alt="pot" width="80px" class="sPot"></label>
+              </div>
+                <div class="container">
+                  <input type="radio" id="cone" value="cone" name="container" required>
+                  <label for="cone" class="goldHover">Cone <br><img src="OIP.png" alt="cone" width="80px" class="sCone"></label>
+              </div>
+      </div>
+     
+      <div class="make">
+            <h2 class="makeTitel">Make</h2>
+            <div class="icecount" >
+              <div class="iceWrapper">
+                <input type="checkbox" id="vanille" value="vanille" name="make">
+                <label for="vanille" class="goldHover">Vanille</label>
+                <input type="number" min="1" max="5" id="vanilleinput"  placeholder="scoop" />
+              </div>
+              <br>
+              <div>
+                <input type="checkbox" id="chocolate" value="chocolate" name="make">
+                <label for="chocolate" class="goldHover">Chocolate</label>
+                <input type="number" min="1" max="5" id="chocoladeinput" placeholder="scoop" />
+              </div>
+              <br>
+              <div>
+                <input type="checkbox" id="straw" value="straw" name="make">
+                <label for="straw" class="goldHover">Strawberry</label>
+                <input type="number" min="1" max="5" id="strainput" placeholder="scoop" />
+              </div>
+              <br>
+              <div>
+                <input type="checkbox" id="avicado" value="chocolate" name="make">
+                <label for="avocado" class="goldHover">Avocado</label>
+                <input type="number" min="1" max="5" id="avocainput" placeholder="scoop" />
+              </div>
+              <br>
+              <div>
+                <input type="checkbox" id="bleuberry" value="chocolate" name="make">
+                <label for="bleuberry" class="goldHover">Bleuberry</label>
+                <input type="number" min="1" max="5" id="blueinput" placeholder="scoop" />
+              </div>
+            </div>
+            <br>
+            <br>
+            <input type="Submit" value="SEND" class="submitbtn">
+        </form>
+      </div>
+      <div class="recip"><img src="pot.jpg" alt="pot"  class="sPot" id="bigPot"></div>
+      <br>
+      <!-- <div id="displayPotOrCone" class="recip"><img src="OIP.png" alt="cone"  class="sCone" id="bigCone"></div> -->
+      <br>
+      <div id="displayPrice">Price</div>
+    </div>
+  </body>
+</html>
